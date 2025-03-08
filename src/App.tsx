@@ -1,11 +1,19 @@
+import { useEffect } from 'react';
 import './globals.css';
 import SqlInputForm from './components/SqlInputForm';
 import SqlFlowDiagram from './components/flow/SqlFlowDiagram';
 import { useSqlStore } from './store/sqlStore';
 
 function App() {
-  const { nodes } = useSqlStore();
+  const { nodes, processSqlScript } = useSqlStore();
   const hasNodes = nodes.length > 0;
+  
+  // Processa o SQL de exemplo automaticamente na montagem do componente
+  useEffect(() => {
+    if (!hasNodes) {
+      processSqlScript();
+    }
+  }, [hasNodes, processSqlScript]);
   
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">

@@ -4,6 +4,7 @@ import { SqlSchema } from '../models/sql';
 import { TableNodeData } from '../models/flow';
 import { parseSqlScript } from '../lib/parser/sqlParser';
 import { generateNodes, generateEdges } from '../lib/utils/flow';
+import exampleSql from '../example/example1.sql?raw';
 
 interface SqlFlowState {
   sqlScript: string;
@@ -22,7 +23,7 @@ interface SqlFlowState {
 }
 
 export const useSqlStore = create<SqlFlowState>((set, get) => ({
-  sqlScript: '',
+  sqlScript: exampleSql,
   schema: null,
   nodes: [],
   edges: [],

@@ -4,6 +4,7 @@ import { Textarea } from './ui/textarea';
 import { Input } from './ui/input';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { useSqlStore } from '../store/sqlStore';
+import exampleSql from '../example/example1.sql?raw';
 
 const SqlInputForm: React.FC = () => {
   const { sqlScript, setSqlScript, processSqlScript, error, isLoading } = useSqlStore();
@@ -11,6 +12,10 @@ const SqlInputForm: React.FC = () => {
   
   const handleProcessClick = () => {
     processSqlScript();
+  };
+  
+  const handleLoadExample = () => {
+    setSqlScript(exampleSql);
   };
   
   const handleFetchFromUrl = async () => {
@@ -57,6 +62,17 @@ const SqlInputForm: React.FC = () => {
             value={sqlScript}
             onChange={(e) => setSqlScript(e.target.value)}
           />
+          
+          <div className="mt-2 flex justify-end">
+            <Button 
+              onClick={handleLoadExample}
+              variant="ghost"
+              size="sm"
+              className="text-xs text-muted-foreground"
+            >
+              Load Example
+            </Button>
+          </div>
         </div>
         
         {error && (
