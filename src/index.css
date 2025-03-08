@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+}
+
+.react-flow__node {
+  @apply border rounded shadow-md;
+  width: auto !important;
+}
+
+.react-flow__handle {
+  @apply bg-blue-500 border-blue-700;
+}
+
+.react-flow__edge-path {
+  @apply stroke-blue-500;
+}

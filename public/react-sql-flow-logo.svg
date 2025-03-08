@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular suave -->
+  <circle cx="100" cy="100" r="90" fill="#f0f9ff"/>
+  
+  <!-- Símbolo de banco de dados simples -->
+  <ellipse cx="70" cy="75" rx="24" ry="10" fill="#0080FF"/>
+  <path d="M46 75 V115 C46 120.5 56.8 125 70 125 C83.2 125 94 120.5 94 115 V75" stroke="#0080FF" stroke-width="2" fill="none"/>
+  <path d="M46 95 C46 100.5 56.8 105 70 105 C83.2 105 94 100.5 94 95" stroke="#0080FF" stroke-width="2" fill="none"/>
+  
+  <!-- Texto "SQL" integrado -->
+  <path d="M50 68 C48 66, 48 62, 50 60 H56 C58 60, 60 61, 60 63 C60 65, 58 66, 56 66 H52 C50 66, 48 67, 48 69 C48 71, 50 72, 52 72 H58 C60 72, 62 73, 62 75 C62 77, 60 78, 58 78 H52 C50 78, 48 76, 48 74" stroke="#0057B7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M65 60 V78" stroke="#0057B7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M72 60 H82 C84 60, 86 61, 86 63 V75 C86 77, 84 78, 82 78 H72" stroke="#0057B7" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Elementos de diagrama simplificados com movimento -->
+  <rect x="120" y="70" width="30" height="20" rx="3" fill="#FF4081" opacity="0.9"/>
+  <rect x="140" y="110" width="30" height="20" rx="3" fill="#FF4081" opacity="0.9"/>
+  <rect x="100" y="110" width="30" height="20" rx="3" fill="#FF4081" opacity="0.9"/>
+  
+  <!-- Conexões entre elementos com efeito de velocidade -->
+  <path d="M135 90 L140 110" stroke="#FF4081" stroke-width="2.5" stroke-dasharray="3,2"/>
+  <path d="M135 90 L115 110" stroke="#FF4081" stroke-width="2.5" stroke-dasharray="3,2"/>
+  
+  <!-- Linhas "em movimento" para dar sensação de velocidade -->
+  <path d="M155 65 L180 45" stroke="#03A9F4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M160 65 L185 45" stroke="#03A9F4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M165 65 L190 45" stroke="#03A9F4" stroke-width="2" stroke-linecap="round"/>
+</svg> 
