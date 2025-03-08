@@ -18,7 +18,7 @@ export function useDragHandlers(
   
   // Função para atualizar a posição durante o arraste
   const onNodeDrag: NodeDragHandler = useCallback(
-    (event, node) => {
+    (_event, node) => {
       // Marca que estamos em um processo de arraste
       isDraggingRef.current = true;
       
@@ -45,7 +45,7 @@ export function useDragHandlers(
   
   // Função para lidar com o final do arraste dos nós
   const onNodeDragStop: NodeDragHandler = useCallback(
-    (event, node) => {
+    (_event, node) => {
       // Marca que o arraste terminou
       isDraggingRef.current = false;
       

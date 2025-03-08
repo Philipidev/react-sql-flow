@@ -1,4 +1,3 @@
-import React from 'react';
 import './globals.css';
 import SqlInputForm from './components/SqlInputForm';
 import SqlFlowDiagram from './components/flow/SqlFlowDiagram';
